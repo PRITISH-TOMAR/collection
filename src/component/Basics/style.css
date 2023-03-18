@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+#root {
+  background: #84f1df58;
+  background-image:linear-gradient(to bottom right, #3984df , #3bbfec , #8548df , #44baff); 
+  box-sizing: border-box;
+  padding: 0px 8px 0px 8px ;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+  bottom: 30px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.subtle {
+  color: #aaa;
+}
+
+.main-card--cointainer {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 600px));
+  grid-gap: 50px;
+  justify-content: space-around;
+  
+}
+
+.card-container {
+  
+  margin: 25px auto 0;
+  position: relative;
+  display: flex;
+flex-direction: row;
+   justify-content: center;
+
+  /* align-items: flex-start; */
+  /* border: 2px solid blue; */
+}
+
+.card-container img {
+margin-top: 10px;    
+width: 60%;
+  height: 70%;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 8px 7px 6px 7px ;
+  position: relative;
+  box-shadow: 0 0 5px rgba(75, 75, 75, 0.07);
+  z-index: 1;
+  height: 550px;
+  width: 374.67px;
+  border-radius: 10px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+.card {
+ 
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+/* .card-number {
+  margin-top: 15px;
+} */
+
+.card-circle {
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 22px;
+  font-size: 12px;
+  height: 25px;
+  text-align: center;
+  width: 25px;
+}
+
+.card-author {
+  display: block;
+  font-size: 18px;
+  text-align: right;
+  letter-spacing: 0.5px;
+  margin: 8px 0 12px;
+  font-weight: 530;
+  color: #6a6a6a;
+}
+
+.card-title {
+   /* border: 1px solid red; */
+   min-height: 60px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 32px;
+  font-weight: 300;
+  /* line-height: 30px; */
+  margin: 8px 0px 0px 10px;
+  text-transform: capitalize;
+}
+
+.card-description {
+  /* display: inline-block; */
+  font-weight: 300;
+  line-height: 22px;
+  margin: 10px 0;
+}
+
+.card-read {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 6px;
+  margin: 5px 0 20px;
+  position: relative;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.card-read:after {
+  background-color: #b8bddd;
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  top: 9px;
+  width: 75%;
+}
+
+.card-tag {
+  float: right;
+  margin: 5px 0 0;
+  border: 1px solid #aaa;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.card-tag:hover {
+  background: #aaa;
+  color: black;
+}
+
+.card-media {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-shadow {
+  background-color: #fff;
+  box-shadow: 0 2px 25px 2px rgba(0, 0, 0, 1), 0 2px 50px 2px rgba(0, 0, 0, 1),
+    0 0 100px 3px rgba(0, 0, 0, 0.25);
+  height: 1px;
+  margin: -1px auto 0;
+  width: 80%;
+  z-index: -1;
+}
+
+@media (max-width: 998px) {
+  .main-card--cointainer {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(200px, 500px));
+    grid-gap: 50px;
+    justify-content: space-around;
+  }
+}
+
+/* ---------- Button styles ------------------ */
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* padding-top: 50px; */
+  /* text-align: center; */
+}
+
+.navbar h1 {
+  /* padding-bottom: 20px; */
+  text-transform: capitalize;
+}
+
+/** button group styles **/
+.btn-group {
+  border-radius: 1rem;
+  text-transform: capitalize;
+}
+.btn-group__item {
+  border: none;
+  /* min-width: 6rem; */
+  padding:  1rem  2.2rem 1rem 2.2rem;
+  background: #1F2833;
+  color: white;
+  cursor: pointer;
+  margin: 0;
+  font-size: 17px;
+  box-shadow: inset 0px 0px 0px -15px rgb(255, 255, 255);
+  transition: all 300ms ease-out;
+  text-transform: capitalize;
+}
+.btn-group__item:last-child {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.btn-group__item:first-child {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.btn-group__item:hover,
+.btn-group__item:focus {
+  color: #66FcF1;
+      box-shadow: inset 0px -20px 0px -15px rgb(255, 255, 255);
+}
+.btn-group__item:focus {
+  outline: none;
+}
+.btn-group__item:after {
+  margin-left: 0.5rem;
+  content: "✔️";
+  display: inline-block;
+  color: rgb(156, 233, 248);
+  position: absolute;
+  transform: translatey(10px);
+  opacity: 0;
+  transition: all 200ms ease-out;
+}
+.btn-group__item--active:after {
+  opacity: 1;
+  transform: translatey(-2px);
+}
+
+
+
+/* ................... */
+.search-box{
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+.input-search{
+  height: 50px;
+  width: 50px;
+border: 1px solid transparent;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all .5s ease-in-out;
+  background-color: #fff5c3;
+  padding-right: 40px;
+  color:#000000;
+}
+.input-search::placeholder{
+  color:rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.btn-search{
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color:#ffffff ;
+  background-color:transparent;
+  pointer-events: painted;  
+}
+.btn-search:focus ~ .input-search{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+.input-search:focus{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+
+@media screen and (min-width:340px) and (max-width: 800px) {
+  
+  .navbar{
+    display: none !important;
+  
+    width: 80%;
+  }
+
+  .card{
+    width: 90%;
+  }
+  
+
+
+}
+
+/* ......................................... */
+
+
+
+.card .back {
+  position: absolute;
+  transform: rotateY(0deg);
+  backface-visibility: hidden;
+  transition: transform 0.4s linear;
+}
+.card .front {
+  position: absolute;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  transition: transform 0.4s linear;
+}
+.card:hover .back {
+  transform: rotateY(-180deg);
+  cursor: pointer;
+}
+.card:hover .front {
+  transform: rotateY(0deg);
+  cursor: pointer;
+}
+
+/* .................... */
+.botn {
+  font-family: "Sentinel A","Sentinel B",Georgia,serif; 
+  text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+  background: #4383c5;
+  color: #FFF;
+  padding: 6px 20px 7px; 
+  font-size: 18px;
+  line-height: 23px;
+  min-width: 50px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle; 
+  border: 1px solid 4383c5;
+  cursor: pointer;
+  font-weight: 600px; 
+  transition: opacity 0.1s ease-out,background 0.1s ease-out;
+  -webkit-border-radius: 2px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.3),0 1px 3px rgba(0,0,0,0.4);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.3),0 1px 3px rgba(0,0,0,0.4);
+  -webkit-transition: opacity 0.1s ease-out,background 0.1s ease-out;
+}
+
+
+.botn:hover
+{
+  background-color: #e59c26; 
+  color: #000000;
+}
