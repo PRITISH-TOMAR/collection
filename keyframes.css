@@ -1,0 +1,75 @@
+@media screen and (min-width:440px) and (max-width: 800px) {
+    .navbar2 .hb{
+        font-size: 0.7em;
+        height: 30px;
+        
+    }
+
+    #mid1,.mid1{
+        display: block;
+        
+        width: auto;
+
+        height: 350px;
+    }
+    #mid{
+        display: flex;
+        justify-content: center;
+    }
+   .mid2{
+    width: 80%;
+
+   }
+   .markus{
+    display: none;
+
+   }
+   #mark2{
+    display: block;
+   }
+  }
+
+
+  @media screen and (max-width:440px){
+
+    .navbar2 .hb{
+        
+        font-size: 0.6em;
+        height: 25px;
+        padding-top: 5px;
+         
+    }
+
+    #mid1,.mid1{
+        display: block;
+        
+        width: auto;
+
+        height: 200px;
+    }
+    #mid{
+        display: flex;
+        justify-content: center;
+    }
+   .mid2{
+    width: 80%;
+    font-size: 0.9em;
+
+   }
+   .fea{
+    width: 95vw;
+    justify-content: center;
+    justify-self: center;
+}
+
+
+.markus{
+    display: none;
+
+   }
+   #mark2{
+    display: block;
+   }
+  }
+
+  
